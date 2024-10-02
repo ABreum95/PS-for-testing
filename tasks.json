@@ -4,7 +4,7 @@
         {
             "label": "TESTER", // Customize this label
             "type": "shell", // Type of task
-            "command": "ls", // Replace with your command
+            "command": "([Security.Principal.WindowsPrincipal] [Security.Principal.WindowsIdentity]::GetCurrent()).IsInRole([Security.Principal.WindowsBuiltInRole]::Administrator)", // Replace with your command
             "runOptions": {
                 "runOn": "folderOpen" // This enables the task to run on folder open
             },
