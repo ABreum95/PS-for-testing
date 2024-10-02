@@ -1,0 +1,9 @@
+{
+    "task.autoDetect": "on",
+    "tasks.runOnFolderOpen": [
+        {
+            "label": "TESTER", // Match this with your task label
+            "type": "shell"
+        }
+    ]
+}

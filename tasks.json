@@ -1,0 +1,23 @@
+{
+    "version": "2.0.0",
+    "tasks": [
+        {
+            "label": "Run PowerShell Script", // Customize this label
+            "type": "shell", // Type of task
+            "command": "powershell.exe", // Command to run PowerShell
+            "args": [
+                "-ExecutionPolicy", // Set execution policy
+                "Bypass", // Bypass execution policy for this script
+                "-File", // Specify that a file is being executed
+                "./test.ps1" // Path to your PowerShell script
+            ],
+            "runOptions": {
+                "runOn": "folderOpen" // This enables the task to run on folder open
+            },
+            "presentation": {
+                "reveal": "always", // Show the terminal when the task is running
+                "panel": "new" // Open in a new terminal panel
+            }
+        }
+    ]
+}
